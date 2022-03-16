@@ -117,6 +117,7 @@ public class AuthServer implements AuthApi {
         // 记录token操作时间
         result.put("token", token);
         ServletUtils.setToken(token);
+        authUserService.clearCache(user.getUserId());
         return result;
     }
 
@@ -140,7 +141,7 @@ public class AuthServer implements AuthApi {
     @Override
     public Boolean useInitPwd() {
         CurrentUserDto user = AuthUtils.getUser();
-        if (null == user) {
+        if (null == user || 0 != user.getFrom()) {
             return false;
         }
         String md5 = CodingUtil.md5(DEFAULT_PWD);
