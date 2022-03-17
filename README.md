@@ -39,12 +39,13 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 - Amazon Redshift
 - Hive
 - DB2
+- API
 
 > 更多数据源支持持续增加中...
 
 ## UI 展示
 
-![de-ui](https://www.fit2cloud.com/dataease/images/screenshot/dataease-v1.gif)
+![de-ui](https://dataease.io/docs/img/index/%E7%95%8C%E9%9D%A2%E5%B1%95%E7%A4%BA.gif)
 
 ## 功能架构
 
@@ -76,13 +77,14 @@ curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_st
 
 ## 技术栈
 
+-   前端：[Vue.js](https://vuejs.org/)、[Element](https://element.eleme.cn/)
+-   图库：[Apache ECharts](https://github.com/apache/echarts)、[AntV](https://antv.vision/zh)
 -   后端：[Spring Boot](https://spring.io/projects/spring-boot)
--   前端：[Vue.js](https://vuejs.org/)、[Element](https://element.eleme.cn/)、[Apache ECharts](https://github.com/apache/echarts)、[AntV](https://antv.vision/zh)
 -   中间件：[MySQL](https://www.mysql.com/)
 -   数据处理：[Kettle](https://github.com/pentaho/pentaho-kettle)、[Apache Doris](https://github.com/apache/incubator-doris/)
 -   基础设施：[Docker](https://www.docker.com/)
 
-## License & Copyright
+## License
 
 Copyright (c) 2014-2022 飞致云 FIT2CLOUD, All rights reserved.
 
